@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Martin0619/roomtogo-clone/static/css/main.a744d756.chunk.css",
-    "main.js": "/Martin0619/roomtogo-clone/static/js/main.58e16d0a.chunk.js",
-    "main.js.map": "/Martin0619/roomtogo-clone/static/js/main.58e16d0a.chunk.js.map",
-    "runtime-main.js": "/Martin0619/roomtogo-clone/static/js/runtime-main.dbc1159e.js",
-    "runtime-main.js.map": "/Martin0619/roomtogo-clone/static/js/runtime-main.dbc1159e.js.map",
-    "static/js/2.d30550eb.chunk.js": "/Martin0619/roomtogo-clone/static/js/2.d30550eb.chunk.js",
-    "static/js/2.d30550eb.chunk.js.map": "/Martin0619/roomtogo-clone/static/js/2.d30550eb.chunk.js.map",
-    "index.html": "/Martin0619/roomtogo-clone/index.html",
-    "static/css/main.a744d756.chunk.css.map": "/Martin0619/roomtogo-clone/static/css/main.a744d756.chunk.css.map",
-    "static/js/2.d30550eb.chunk.js.LICENSE.txt": "/Martin0619/roomtogo-clone/static/js/2.d30550eb.chunk.js.LICENSE.txt"
+    "main.css": "/room-to-go-clone/static/css/main.a744d756.chunk.css",
+    "main.js": "/room-to-go-clone/static/js/main.58e16d0a.chunk.js",
+    "main.js.map": "/room-to-go-clone/static/js/main.58e16d0a.chunk.js.map",
+    "runtime-main.js": "/room-to-go-clone/static/js/runtime-main.b8d394a1.js",
+    "runtime-main.js.map": "/room-to-go-clone/static/js/runtime-main.b8d394a1.js.map",
+    "static/js/2.d30550eb.chunk.js": "/room-to-go-clone/static/js/2.d30550eb.chunk.js",
+    "static/js/2.d30550eb.chunk.js.map": "/room-to-go-clone/static/js/2.d30550eb.chunk.js.map",
+    "index.html": "/room-to-go-clone/index.html",
+    "static/css/main.a744d756.chunk.css.map": "/room-to-go-clone/static/css/main.a744d756.chunk.css.map",
+    "static/js/2.d30550eb.chunk.js.LICENSE.txt": "/room-to-go-clone/static/js/2.d30550eb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.dbc1159e.js",
+    "static/js/runtime-main.b8d394a1.js",
     "static/js/2.d30550eb.chunk.js",
     "static/css/main.a744d756.chunk.css",
     "static/js/main.58e16d0a.chunk.js"
