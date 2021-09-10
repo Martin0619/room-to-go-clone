@@ -1,0 +1,18 @@
+.input-search {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 0.4rem;
+
+  & input[type="search"] {
+    border: none;
+    border-bottom: 1.5px solid #bbbaba;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      letter-spacing: 1.5px;
+    }
+  }
+}

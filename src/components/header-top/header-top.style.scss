@@ -1,0 +1,18 @@
+.header-top {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding-top: 1.5rem;
+
+  & .header-logo {
+    justify-self: center;
+  }
+
+  & .cart-icon {
+    justify-self: end;
+  }
+
+  & .input-search {
+    justify-self: start;
+  }
+}

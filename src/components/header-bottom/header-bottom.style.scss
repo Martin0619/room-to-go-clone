@@ -1,0 +1,15 @@
+.header-bottom {
+  padding: 1rem 0;
+
+  & .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  & .nav-link {
+    font-weight: 700;
+    color: #242323;
+  }
+}

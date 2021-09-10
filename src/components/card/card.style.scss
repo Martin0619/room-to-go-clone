@@ -1,0 +1,52 @@
+.card {
+  display: grid;
+  row-gap: 0.2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+  cursor: pointer;
+  position: relative;
+  width: 25.75rem;
+  height: 20rem;
+  font-size: 0.55rem;
+  letter-spacing: 1px;
+  transition: all 100ms ease;
+
+  &:hover {
+    transform: translateY(-2%);
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.411);
+  }
+
+  & .image-container {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  & &-title {
+    place-self: center;
+    padding: 1rem 0.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #242323;
+  }
+
+  & &-price {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  & .custom-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 0.9rem;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 400ms ease;
+  }
+
+  &:hover .custom-button {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+}

@@ -1,0 +1,18 @@
+$primary: #222222e1;
+$link: #e6e6e6;
+
+.custom-button {
+  padding: 0.5rem 1.7rem;
+  background-color: $primary;
+  transition: all 400ms ease;
+  max-width: max-content;
+  color: $link;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  &:hover {
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+  }
+}

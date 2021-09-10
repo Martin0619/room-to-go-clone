@@ -1,0 +1,10 @@
+.app-layout {
+  display: grid;
+  grid-template-rows:
+    [header-start] minmax(20vh, auto) [header-end main-start]
+    1fr [main-end footer-start]
+    20vh [footer-end];
+  row-gap: 1rem;
+
+  min-height: 100vh;
+}

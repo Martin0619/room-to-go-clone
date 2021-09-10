@@ -1,0 +1,13 @@
+.search-button {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #4173ce;
+  border: none;
+
+  & svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: translateY(8%);
+    fill: white;
+  }
+}
