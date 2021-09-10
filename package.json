@@ -2,6 +2,7 @@
   "name": "room-to-go-clone",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Martin0619.github.io/room-to-go-clone",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
