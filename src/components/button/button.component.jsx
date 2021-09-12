@@ -2,13 +2,10 @@ import React from "react";
 
 import "./button.style.scss";
 
-const Button = (props) => {
-  const { className: propsClassName, ...rest } = props;
-  return (
-    <a className={`custom-button ${propsClassName}`} {...rest}>
-      {props.text}
-    </a>
-  );
-};
+const Button = ({ className: propsClassName, text, ...rest }) => (
+  <a className={`custom-button ${propsClassName}`} {...rest}>
+    {text}
+  </a>
+);
 
 export default Button;
