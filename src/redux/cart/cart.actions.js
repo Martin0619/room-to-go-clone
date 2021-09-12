@@ -7,7 +7,10 @@ export const addItemToCart = (item) => ({
 
 export const clearCart = () => ({ type: t.clearCart });
 
-export const removeItemFromCart = () => ({ type: t.removeItemFromCart });
+export const removeItemFromCart = (sku) => ({
+  type: t.removeItemFromCart,
+  payload: sku,
+});
 
 export const removeOneItemUnit = (sku) => ({
   type: t.removeOneItemUnit,

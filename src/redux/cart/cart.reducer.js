@@ -1,4 +1,5 @@
 import * as t from "./cart.types";
+import { round } from "./cart.util";
 
 const initialState = {
   items: {},
@@ -21,7 +22,7 @@ const cartReducer = (state = initialState, action) => {
         return {
           ...state,
           countItems: state.countItems + 1,
-          subtotal: state.subtotal + existingItem.price,
+          subtotal: round(state.subtotal + existingItem.price),
           items: {
             ...items,
             [existingItem.sku]: {
@@ -35,11 +36,29 @@ const cartReducer = (state = initialState, action) => {
       return {
         ...state,
         countItems: state.countItems + 1,
-        subtotal: state.subtotal + itemToAdd.price,
+        subtotal: round(state.subtotal + itemToAdd.price),
         items: {
           ...items,
           [itemToAdd.sku]: { ...itemToAdd, quantity: 1 },
         },
+      };
+    }
+
+    case t.removeItemFromCart: {
+      const sku = action.payload;
+
+      if (!state.items[sku]) return state;
+
+      const oldItem = state.items[sku];
+      delete state.items[sku];
+
+      return {
+        ...state,
+        subtotal: round(
+          state.subtotal - oldItem.price * (oldItem.quantity ?? 0)
+        ),
+        countItems: state.countItems - oldItem.quantity,
+        items: { ...state.items },
       };
     }
 

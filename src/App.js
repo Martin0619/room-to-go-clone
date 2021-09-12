@@ -4,6 +4,8 @@ import { Switch, Route } from "react-router-dom";
 import "./App.style.scss";
 import Layout from "./components/layout/layout.component";
 import LoadingSpinner from "./components/loading-spinner/loading-spinner.component";
+import ErrorBoundary from "./components/error-boundary/error-boundary.component";
+import CartModla from "./components/cart-modal/cart-modal.component";
 
 const HomePage = lazy(() => import("./pages/home/home.page"));
 const FurniturePage = lazy(() => import("./pages/furniture/furniture.page"));
@@ -16,23 +18,32 @@ const LivingRoomSetsPage = lazy(() =>
 
 const App = () => (
   <Layout>
-    <Suspense fallback={<LoadingSpinner />}>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/furniture" component={FurniturePage} />
-        <Route
-          exact
-          path="/furniture/living-rooms"
-          component={LivingRoomsCategoriesPage}
-        />
-        <Route
-          exact
-          path="/furniture/living-rooms/sets"
-          component={LivingRoomSetsPage}
-        />
-        <Route path="*" render={() => <h1>Page Not Found</h1>} />
-      </Switch>
-    </Suspense>
+    <ErrorBoundary>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Switch>
+          <Route exact path="/room-to-go-clone" component={HomePage} />
+          <Route exact path="/room-to-go/furniture" component={FurniturePage} />
+          <Route
+            exact
+            path="/room-to-go-clone/furniture/living-rooms"
+            component={LivingRoomsCategoriesPage}
+          />
+          <Route
+            exact
+            path="/room-to-go-clone/furniture/living-rooms/sets"
+            component={LivingRoomSetsPage}
+          />
+          <Route
+            path="/room-to-go-clone/error"
+            render={() => {
+              throw Error;
+            }}
+          />
+          <Route path="/room-to-go-clone/cart" component={CartModla} />
+          <Route path="*" render={() => <h1>Page Not Found</h1>} />
+        </Switch>
+      </Suspense>
+    </ErrorBoundary>
   </Layout>
 );
 

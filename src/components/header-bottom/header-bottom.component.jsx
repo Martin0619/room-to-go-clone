@@ -7,27 +7,33 @@ const HeaderBottom = () => (
   <section className="header-bottom">
     <ul className="nav-menu">
       <li className="nav-item">
-        <NavLink className="nav-link" to="/furniture">
+        <NavLink className="nav-link" to="/room-to-go-clone/furniture">
           furniture
         </NavLink>
       </li>
       <li className="nav-item">
-        <NavLink className="nav-link" to={`/furniture/kids-and-teens`}>
+        <NavLink
+          className="nav-link"
+          to={`/room-to-go-clone/furniture/kids-and-teens`}
+        >
           {"kids & teens"}
         </NavLink>
       </li>
       <li className="nav-item">
-        <NavLink className="nav-link" to="/furniture/outdoor-patio">
+        <NavLink
+          className="nav-link"
+          to="/room-to-go-clone/furniture/outdoor-patio"
+        >
           patio
         </NavLink>
       </li>
       <li className="nav-item">
-        <NavLink className="nav-link" to="/mattresses">
+        <NavLink className="nav-link" to="/room-to-go-clone/mattresses">
           mattresses
         </NavLink>
       </li>
       <li className="nav-item">
-        <NavLink className="nav-link" to="/sales">
+        <NavLink className="nav-link" to="/room-to-go-clone/sales">
           sales
         </NavLink>
       </li>

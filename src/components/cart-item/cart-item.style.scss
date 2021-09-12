@@ -1,0 +1,35 @@
+.cart-item {
+  $cartItemBorderColor: #cecece;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 0.5rem;
+  padding: 1rem 0.7rem;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $cartItemBorderColor;
+  }
+
+  & &-name {
+    grid-column: 2 / span 2;
+    justify-self: center;
+  }
+
+  & &-remove-btn {
+    justify-self: center;
+    cursor: pointer;
+  }
+
+  & &-qty {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    justify-self: start;
+  }
+
+  & &-price {
+    grid-column: 3 / span 1;
+    grid-row: 2;
+    justify-self: end;
+  }
+}

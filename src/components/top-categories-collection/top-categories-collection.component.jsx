@@ -9,7 +9,10 @@ import { selectTopCategories } from "../../redux/top-categories/top-categories.s
 let TopCategories = ({ topCategories: categories }) => (
   <div className="collection top-categories-collection">
     {Object.keys(categories).map((key) => (
-      <Link key={categories[key].id} to={`/${categories[key].path}`}>
+      <Link
+        key={categories[key].id}
+        to={`/room-to-go-clone/${categories[key].path}`}
+      >
         <Card
           preview
           src={categories[key].imageUrl}

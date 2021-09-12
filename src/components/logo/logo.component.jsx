@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Logo = (props) => (
-  <Link {...props} to="/">
+  <Link {...props} to="/room-to-go-clone">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="310"

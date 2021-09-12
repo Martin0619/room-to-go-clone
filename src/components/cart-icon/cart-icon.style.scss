@@ -1,4 +1,21 @@
 .cart-icon {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  margin-right: 1rem;
+
+  & .cart-total-items {
+    position: absolute;
+    top: -45%;
+    left: 90%;
+    padding: 0.2rem 0.45rem;
+    border-radius: 50%;
+    background-color: #2862cf;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+  }
+
   & svg {
     width: 2rem;
     height: 2rem;

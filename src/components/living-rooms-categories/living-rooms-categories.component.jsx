@@ -8,7 +8,10 @@ import Card from "../card/card.component";
 let LivingRoomsCategories = ({ categories }) => (
   <div className="collection">
     {Object.keys(categories).map((key) => (
-      <Link key={categories[key].id} to={`/${categories[key].path}`}>
+      <Link
+        key={categories[key].id}
+        to={`/room-to-go-clone/${categories[key].path}`}
+      >
         <Card
           preview
           src={categories[key].imageUrl}
