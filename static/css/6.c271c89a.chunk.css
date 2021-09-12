@@ -1,0 +1,2 @@
+.main-content-layout{display:grid;grid-row-gap:2rem;row-gap:2rem;margin-bottom:3rem}.main-content-layout .collection{display:grid;width:100%;grid-template-columns:repeat(3,32%);grid-auto-rows:-webkit-max-content;grid-auto-rows:max-content;justify-items:center;grid-column-gap:1.7rem;-webkit-column-gap:1.7rem;column-gap:1.7rem;grid-row-gap:3.5rem;row-gap:3.5rem}
+/*# sourceMappingURL=6.c271c89a.chunk.css.map */

@@ -1,20 +1,36 @@
 {
   "files": {
-    "main.css": "/room-to-go-clone/static/css/main.a744d756.chunk.css",
-    "main.js": "/room-to-go-clone/static/js/main.58e16d0a.chunk.js",
-    "main.js.map": "/room-to-go-clone/static/js/main.58e16d0a.chunk.js.map",
-    "runtime-main.js": "/room-to-go-clone/static/js/runtime-main.b8d394a1.js",
-    "runtime-main.js.map": "/room-to-go-clone/static/js/runtime-main.b8d394a1.js.map",
-    "static/js/2.d30550eb.chunk.js": "/room-to-go-clone/static/js/2.d30550eb.chunk.js",
-    "static/js/2.d30550eb.chunk.js.map": "/room-to-go-clone/static/js/2.d30550eb.chunk.js.map",
+    "main.css": "/room-to-go-clone/static/css/main.e26a1b32.chunk.css",
+    "main.js": "/room-to-go-clone/static/js/main.5fba916d.chunk.js",
+    "main.js.map": "/room-to-go-clone/static/js/main.5fba916d.chunk.js.map",
+    "runtime-main.js": "/room-to-go-clone/static/js/runtime-main.e68e1461.js",
+    "runtime-main.js.map": "/room-to-go-clone/static/js/runtime-main.e68e1461.js.map",
+    "static/js/2.8cb56557.chunk.js": "/room-to-go-clone/static/js/2.8cb56557.chunk.js",
+    "static/js/2.8cb56557.chunk.js.map": "/room-to-go-clone/static/js/2.8cb56557.chunk.js.map",
+    "static/css/3.6a4edd19.chunk.css": "/room-to-go-clone/static/css/3.6a4edd19.chunk.css",
+    "static/js/3.193f610e.chunk.js": "/room-to-go-clone/static/js/3.193f610e.chunk.js",
+    "static/js/3.193f610e.chunk.js.map": "/room-to-go-clone/static/js/3.193f610e.chunk.js.map",
+    "static/css/4.cedd89a8.chunk.css": "/room-to-go-clone/static/css/4.cedd89a8.chunk.css",
+    "static/js/4.56e5f52b.chunk.js": "/room-to-go-clone/static/js/4.56e5f52b.chunk.js",
+    "static/js/4.56e5f52b.chunk.js.map": "/room-to-go-clone/static/js/4.56e5f52b.chunk.js.map",
+    "static/css/5.cedd89a8.chunk.css": "/room-to-go-clone/static/css/5.cedd89a8.chunk.css",
+    "static/js/5.207309e5.chunk.js": "/room-to-go-clone/static/js/5.207309e5.chunk.js",
+    "static/js/5.207309e5.chunk.js.map": "/room-to-go-clone/static/js/5.207309e5.chunk.js.map",
+    "static/css/6.c271c89a.chunk.css": "/room-to-go-clone/static/css/6.c271c89a.chunk.css",
+    "static/js/6.a5a0a294.chunk.js": "/room-to-go-clone/static/js/6.a5a0a294.chunk.js",
+    "static/js/6.a5a0a294.chunk.js.map": "/room-to-go-clone/static/js/6.a5a0a294.chunk.js.map",
     "index.html": "/room-to-go-clone/index.html",
-    "static/css/main.a744d756.chunk.css.map": "/room-to-go-clone/static/css/main.a744d756.chunk.css.map",
-    "static/js/2.d30550eb.chunk.js.LICENSE.txt": "/room-to-go-clone/static/js/2.d30550eb.chunk.js.LICENSE.txt"
+    "static/css/3.6a4edd19.chunk.css.map": "/room-to-go-clone/static/css/3.6a4edd19.chunk.css.map",
+    "static/css/4.cedd89a8.chunk.css.map": "/room-to-go-clone/static/css/4.cedd89a8.chunk.css.map",
+    "static/css/5.cedd89a8.chunk.css.map": "/room-to-go-clone/static/css/5.cedd89a8.chunk.css.map",
+    "static/css/6.c271c89a.chunk.css.map": "/room-to-go-clone/static/css/6.c271c89a.chunk.css.map",
+    "static/css/main.e26a1b32.chunk.css.map": "/room-to-go-clone/static/css/main.e26a1b32.chunk.css.map",
+    "static/js/2.8cb56557.chunk.js.LICENSE.txt": "/room-to-go-clone/static/js/2.8cb56557.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8d394a1.js",
-    "static/js/2.d30550eb.chunk.js",
-    "static/css/main.a744d756.chunk.css",
-    "static/js/main.58e16d0a.chunk.js"
+    "static/js/runtime-main.e68e1461.js",
+    "static/js/2.8cb56557.chunk.js",
+    "static/css/main.e26a1b32.chunk.css",
+    "static/js/main.5fba916d.chunk.js"
   ]
 }
