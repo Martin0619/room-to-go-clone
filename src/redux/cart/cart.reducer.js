@@ -1,9 +1,12 @@
 import * as t from "./cart.types";
-import { round } from "./cart.util";
+import {
+  addItemToCart,
+  removeItemFromCart,
+  removeOneItemUnit,
+} from "./cart.util";
 
 const initialState = {
   items: {},
-  hidden: true,
   subtotal: 0,
   countItems: 0,
 };
@@ -13,54 +16,14 @@ const cartReducer = (state = initialState, action) => {
     case t.clearCart:
       return initialState;
 
-    case t.addItemToCart: {
-      const itemToAdd = action.payload;
-      const { items } = state;
-      const existingItem = items[itemToAdd.sku];
+    case t.addItemToCart:
+      return addItemToCart(action.payload, state);
 
-      if (existingItem) {
-        return {
-          ...state,
-          countItems: state.countItems + 1,
-          subtotal: round(state.subtotal + existingItem.price),
-          items: {
-            ...items,
-            [existingItem.sku]: {
-              ...existingItem,
-              quantity: existingItem.quantity + 1,
-            },
-          },
-        };
-      }
+    case t.removeItemFromCart:
+      return removeItemFromCart(action.payload, state);
 
-      return {
-        ...state,
-        countItems: state.countItems + 1,
-        subtotal: round(state.subtotal + itemToAdd.price),
-        items: {
-          ...items,
-          [itemToAdd.sku]: { ...itemToAdd, quantity: 1 },
-        },
-      };
-    }
-
-    case t.removeItemFromCart: {
-      const sku = action.payload;
-
-      if (!state.items[sku]) return state;
-
-      const oldItem = state.items[sku];
-      delete state.items[sku];
-
-      return {
-        ...state,
-        subtotal: round(
-          state.subtotal - oldItem.price * (oldItem.quantity ?? 0)
-        ),
-        countItems: state.countItems - oldItem.quantity,
-        items: { ...state.items },
-      };
-    }
+    case t.removeOneItemUnit:
+      return removeOneItemUnit(action.payload, state);
 
     default:
       return state;

@@ -5,7 +5,7 @@ import "./App.style.scss";
 import Layout from "./components/layout/layout.component";
 import LoadingSpinner from "./components/loading-spinner/loading-spinner.component";
 import ErrorBoundary from "./components/error-boundary/error-boundary.component";
-import CartModla from "./components/cart-modal/cart-modal.component";
+import CartPage from "./pages/cart/cart.page";
 
 const HomePage = lazy(() => import("./pages/home/home.page"));
 const FurniturePage = lazy(() => import("./pages/furniture/furniture.page"));
@@ -39,7 +39,7 @@ const App = () => (
               throw Error;
             }}
           />
-          <Route path="/room-to-go-clone/cart" component={CartModla} />
+          <Route path="/room-to-go-clone/cart" component={CartPage} />
           <Route path="*" render={() => <h1>Page Not Found</h1>} />
         </Switch>
       </Suspense>
