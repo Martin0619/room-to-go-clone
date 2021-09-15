@@ -1,0 +1,50 @@
+.cart-order-box {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.4rem;
+  background-color: #e2dfdf;
+  padding: 1rem 1.4rem;
+  height: min-content;
+
+  & &__heading {
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    border-bottom: 2px solid #e26218;
+    grid-column: 1 / -1;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  & &__subtotal {
+    grid-column: -1 / -2;
+    justify-self: end;
+  }
+
+  & &__shipping-text {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+
+  & &__calc-in-checkout-text {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+  }
+
+  & &__total {
+    grid-row: 5;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+
+  & &__checkout-btn {
+    grid-row: 6;
+    grid-column: 1 / -1;
+    max-width: 100%;
+    text-align: center;
+    padding: 1rem 1.2rem;
+  }
+}

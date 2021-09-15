@@ -5,7 +5,6 @@ import "./App.style.scss";
 import Layout from "./components/layout/layout.component";
 import LoadingSpinner from "./components/loading-spinner/loading-spinner.component";
 import ErrorBoundary from "./components/error-boundary/error-boundary.component";
-import CartPage from "./pages/cart/cart.page";
 
 const HomePage = lazy(() => import("./pages/home/home.page"));
 const FurniturePage = lazy(() => import("./pages/furniture/furniture.page"));
@@ -15,6 +14,7 @@ const LivingRoomsCategoriesPage = lazy(() =>
 const LivingRoomSetsPage = lazy(() =>
   import("./pages/living-room-sets/living-room-sets.page")
 );
+const CartPage = lazy(() => import("./pages/cart/cart.page"));
 
 const App = () => (
   <Layout>
